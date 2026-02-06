@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int codigo[2], qtd[2];
+    double valor[2], total;
+    
+    scanf("%d %d %lf %d %d %lf", &codigo[0], &qtd[0], &valor[0], &codigo[1], &qtd[1], &valor[1]);
+    
+    total = qtd[0]*valor[0] + qtd[1]*valor[1];
+    
+    printf("VALOR A PAGAR: R$ %.2lf\n", total);
+    
+    return 0; 
+}   
