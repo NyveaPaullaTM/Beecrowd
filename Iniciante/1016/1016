@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* por uma regra de três simples, o carro leva 2min para se distanciar 1km*/
+
+int main(){
+    int a;
+    
+    scanf("%d", &a);
+    
+    printf("%d minutos\n", 2*a); 
+    
+    return 0;
+}   
