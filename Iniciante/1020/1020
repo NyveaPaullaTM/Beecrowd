@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+	int ano, mes, entrada;
+	ano = mes = 0;
+	
+	scanf("%d", &entrada);
+	
+	while((entrada/365) > 0){
+	    entrada -= 365;
+	    ano++;
+	}
+	
+	while((entrada/30) > 0){
+	    entrada -= 30;
+	    mes++;
+	}
+	
+	printf("%d ano(s)\n", ano);
+	printf("%d mes(es)\n", mes);
+	printf("%d dia(s)\n", entrada);
+	
+	return 0;
+}
