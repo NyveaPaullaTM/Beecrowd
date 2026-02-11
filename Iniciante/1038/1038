@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int cdg, qtd;
+    double total;
+    
+    scanf("%d %d\n", &cdg, &qtd);
+    
+    if(cdg == 1){
+        total = qtd*4;
+    }
+    else if(cdg == 2){
+        total = qtd*4.5;
+    }
+    else if(cdg == 3){
+        total = qtd*5;
+    }
+    else if(cdg == 4){
+        total = qtd*2;
+    }
+    else if(cdg == 5){
+        total = qtd*1.5;
+    }
+    
+    printf("Total: R$ %.2lf\n", total); 
+    
+    return 0; 
+}
