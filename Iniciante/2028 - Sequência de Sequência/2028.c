@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int main(){
     int n, caso;
@@ -13,21 +12,21 @@ int main(){
             numeros += i;
         }
         
-        if(numeros > 1){
+        if(n > 0){
             printf("Caso %d: %d numeros\n", caso, numeros);
         }
         else{
             printf("Caso %d: %d numero\n", caso, numeros);
         }
         
-        printf("0 ");
+        printf("0");
         
         for(int i = 0; i <= n; i++){
             for(int j = 0; j < i; j++){
-                printf("%d ", i);
+                printf(" %d", i);
             }
         }
-        printf("\n");
+        printf("\n\n");
         
         caso++; 
     }
